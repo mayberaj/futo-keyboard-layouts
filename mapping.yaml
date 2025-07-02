@@ -790,5 +790,8 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+  ja:
+    - flick
+    - flick_latin
   ipa:
     - ipa

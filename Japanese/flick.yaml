@@ -1,0 +1,137 @@
+name: Japanese 12-Key Flick Layout
+languages: ja
+numberRowMode: AlwaysDisabled
+bottomRowHeightMode: Flexible
+attributes: &globalAttrs
+  width: Grow
+  showPopup: false
+  moreKeyMode: OnlyExplicit
+  useKeySpecShortcut: false
+  style: Normal
+  shiftable: false
+  labelFlags:
+    alignLabelOffCenter: false
+    hasHintLabel: false
+rowHeightMode: FillHeight
+rows:
+  - letters:
+      - type: base
+        spec: "!icon/action_undo|!code/action_undo"
+        attributes: &functional { style: Functional, labelFlags: {} }
+
+      - type: flick
+        primary: "あ|1"
+        left: "い|_"
+        up: "う|;"
+        right: "え|:"
+        down: "お|@"
+
+      - type: flick
+        primary: "か|2"
+        left: "き|a"
+        up: "く|b"
+        right: "け|c"
+        down: "こ||"
+
+      - type: flick
+        primary: "さ|3"
+        left: "し|d"
+        up: "す|e"
+        right: "せ|f"
+        down: "そ|~"
+
+      - type: base
+        spec: "!icon/delete_key|!code/key_delete"
+        attributes: *functional
+    splittable: false
+  - letters:
+      - type: base
+        spec: "!icon/action_left|!code/action_left"
+        attributes: *functional
+
+      - type: flick
+        primary: "た|4"
+        left: "ち|g"
+        up: "つ|h"
+        right: "て|i"
+        down: "と|$"
+
+      - type: flick
+        primary: "な|5"
+        left: "に|j"
+        up: "ぬ|k"
+        right: "ね|l"
+        down: "の|%"
+
+      - type: flick
+        primary: "は|6"
+        left: "ひ|m"
+        up: "ふ|n"
+        right: "へ|o"
+        down: "ほ|&"
+
+      - type: base
+        spec: "!icon/action_right|!code/action_right"
+        attributes: *functional
+    splittable: false
+  - letters:
+      - type: base
+        spec: "!icon/action_emoji|!code/action_emoji"
+        attributes: *functional
+
+      - type: flick
+        primary: "ま|7"
+        left: "み|p"
+        up: "む|q"
+        right: "め|r"
+        down: "も|s"
+
+      - type: flick
+        primary: "や|8"
+        up: "ゆ|u"
+        down: "よ|^"
+        left: "("
+        right: ")"
+
+      - type: flick
+        primary: "ら|9"
+        left: "り|w"
+        up: "る|x"
+        right: "れ|y"
+        down: "ろ|z"
+
+      - type: base
+        spec: "!icon/space_key_for_number_layout|!code/key_space"
+        attributes: *functional
+    splittable: false
+  - bottom:
+      - type: base
+        spec: "!text/keylabel_to_symbol|!code/key_switch_alpha_symbol" # TODO: Toggle between Kana, ABCD, 1234
+        attributes: *functional
+
+      - type: flick
+        primary: " |*" # TODO: this should actually change contextually. TODO: icon
+        left: "゛|["
+        up: "あぁ|`"
+        right: "゜|]"
+
+
+      - type: flick
+        primary: "わ|0"
+        left: "を|+"
+        up: "ん|/"
+        right: "ー|-"
+        down: "〜|<"
+
+      - type: flick
+        primary: "、|#"
+        left: "。|,"
+        up: "?|?"
+        right: "!|!"
+        down: "…|>"
+
+      - type: enter
+        attributes:
+          width: Grow
+    attributes: *globalAttrs
+    splittable: false

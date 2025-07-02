@@ -1,0 +1,137 @@
+name: Japanese 12-Key Flick Layout (Latin)
+languages: ja
+numberRowMode: AlwaysDisabled
+bottomRowHeightMode: Flexible
+attributes: &globalAttrs
+  width: Grow
+  showPopup: false
+  moreKeyMode: OnlyExplicit
+  useKeySpecShortcut: false
+  style: Normal
+  shiftable: false
+  labelFlags:
+    alignLabelOffCenter: false
+    hasHintLabel: false
+rowHeightMode: FillHeight
+rows:
+  - letters:
+      - type: base
+        spec: "!icon/action_undo|!code/action_undo"
+        attributes: &functional { style: Functional, labelFlags: {} }
+
+      - type: flick
+        primary: "a|1"
+        left: "i|_"
+        up: "u|;"
+        right: "e|:"
+        down: "o|@"
+
+      - type: flick
+        primary: "ka|2"
+        left: "ki|a"
+        up: "ku|b"
+        right: "ke|c"
+        down: "ko||"
+
+      - type: flick
+        primary: "sa|3"
+        left: "si|d"
+        up: "su|e"
+        right: "se|f"
+        down: "so|~"
+
+      - type: base
+        spec: "!icon/delete_key|!code/key_delete"
+        attributes: *functional
+    splittable: false
+  - letters:
+      - type: base
+        spec: "!icon/action_left|!code/action_left"
+        attributes: *functional
+
+      - type: flick
+        primary: "ta|4"
+        left: "ti|g"
+        up: "tu|h"
+        right: "te|i"
+        down: "to|$"
+
+      - type: flick
+        primary: "na|5"
+        left: "ni|j"
+        up: "nu|k"
+        right: "ne|l"
+        down: "no|%"
+
+      - type: flick
+        primary: "ha|6"
+        left: "hi|m"
+        up: "hu|n"
+        right: "he|o"
+        down: "ho|&"
+
+      - type: base
+        spec: "!icon/action_right|!code/action_right"
+        attributes: *functional
+    splittable: false
+  - letters:
+      - type: base
+        spec: "!icon/action_emoji|!code/action_emoji"
+        attributes: *functional
+
+      - type: flick
+        primary: "ma|7"
+        left: "mi|p"
+        up: "mu|q"
+        right: "me|r"
+        down: "mo|s"
+
+      - type: flick
+        primary: "ya|8"
+        up: "yu|u"
+        down: "yo|^"
+        left: "("
+        right: ")"
+
+      - type: flick
+        primary: "ra|9"
+        left: "ri|w"
+        up: "ru|x"
+        right: "re|y"
+        down: "ro|z"
+
+      - type: base
+        spec: "!icon/space_key_for_number_layout|!code/key_space"
+        attributes: *functional
+    splittable: false
+  - bottom:
+      - type: base
+        spec: "!text/keylabel_to_symbol|!code/key_switch_alpha_symbol" # TODO: Toggle between Kana, ABCD, 1234
+        attributes: *functional
+
+      - type: flick
+        primary: "*" # TODO: this should actually change contextually
+        left: "voicedMark|["
+        up: "small|`"
+        right: "semivoiced|]"
+
+
+      - type: flick
+        primary: "wa|0"
+        left: "wo|+"
+        up: "N|/"
+        right: "-|-"
+        down: "~|<"
+
+      - type: flick
+        primary: ",|#"
+        left: ".|,"
+        up: "?|?"
+        right: "!|!"
+        down: "...|>"
+
+      - type: enter
+        attributes:
+          width: Grow
+    attributes: *globalAttrs
+    splittable: false
