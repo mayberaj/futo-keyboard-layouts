@@ -42,12 +42,12 @@ rows:
 
       - type: base
         spec: "!icon/delete_key|!code/key_delete"
-        attributes: *functional
+        attributes: &repeatable { style: Functional, labelFlags: {}, repeatableEnabled: true }
     splittable: false
   - letters:
       - type: base
         spec: "!icon/action_left|!code/action_left"
-        attributes: *functional
+        attributes: *repeatable
 
       - type: flick
         primary: "ta|4"
@@ -72,7 +72,7 @@ rows:
 
       - type: base
         spec: "!icon/action_right|!code/action_right"
-        attributes: *functional
+        attributes: *repeatable
     splittable: false
   - letters:
       - type: base
@@ -102,7 +102,7 @@ rows:
 
       - type: base
         spec: "!icon/space_key_for_number_layout|!code/key_space"
-        attributes: *functional
+        attributes: { style: Functional, labelFlags: {}, longPressEnabled: true }
     splittable: false
   - bottom:
       - type: base
