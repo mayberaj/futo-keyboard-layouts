@@ -1,4 +1,8 @@
 languages:
+  abq:
+    - north_caucasian
+  ady:
+    - north_caucasian
   af:
     - qwerty
     - qwertz
@@ -12,12 +16,16 @@ languages:
     - nordic
   ak:
     - akan
+  agx:
+    - north_caucasian
   alt:
     - altai
   ar:
     - arabic
     - arabic_pc
     - lulua
+  av:
+    - north_caucasian
   az_AZ:
     - azerbaijani
     - qwerty
@@ -74,6 +82,8 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+  ce:
+    - north_caucasian
   ckb:
     - kurdish
     - central_kurdish_arabic_g
@@ -90,6 +100,8 @@ languages:
     - nordic
   cv:
     - chuvash
+  cy:
+    - welsh_qwerty
   da:
     - nordic
     - qwerty
@@ -101,6 +113,8 @@ languages:
     - colemak_dh_ansi
     - bepo
     - pcqwerty
+  dar:
+    - north_caucasian
   de:
     - german
     - qwertz
@@ -303,6 +317,8 @@ languages:
     - pcqwerty
     - nordic
     - bepo_inclusive
+  ga:
+    - irish
   gag:
     - gagauz
   gl_ES:
@@ -319,6 +335,8 @@ languages:
     - nordic
   ha:
     - hausa
+  haw:
+    - hawaiian
   hi:
     - hindi
     - hindi_compact
@@ -337,6 +355,7 @@ languages:
   hr:
     - serbian_qwertz
     - qwertz
+    - south_slavic_qwertz_12
     - qwerty
     - dvorak
     - azerty
@@ -371,6 +390,8 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+  inh:
+    - north_caucasian
   is:
     - icelandic
     - qwerty
@@ -429,6 +450,8 @@ languages:
     - georgian
   kaa:
     - karakalpak_latin
+  kbd:
+    - north_caucasian
   kk:
     - kazakh_cyrillic
     - east_slavic
@@ -461,6 +484,10 @@ languages:
     - russian_student
     - russian_yavert
     - russian_yazhert
+  lbe:
+    - north_caucasian
+  lez:
+    - north_caucasian
   lo_LA:
     - lao
   lt:
@@ -610,6 +637,8 @@ languages:
     - russian_student
     - russian_yavert
     - russian_yazhert
+  rut:
+    - north_caucasian
   sah:
     - yakut
   se:
@@ -666,7 +695,9 @@ languages:
     - south_slavic
   sr_Latn:
     - serbian_qwertz
+    - south_slavic_qwertz_12
   sv:
+    - qwerty
     - nordic
   sw:
     - qwerty
@@ -688,6 +719,8 @@ languages:
   ta_SG:
     - tamil_inscript
     - tamil
+  tab:
+    - north_caucasian
   te_IN:
     - telugu
   tg:
@@ -700,6 +733,8 @@ languages:
     - thai
   tk:
     - turkmen
+  tkr_RU:
+    - north_caucasian
   tl:
     - spanish
     - qwerty
@@ -734,6 +769,7 @@ languages:
     - uyghur
   uk:
     - ukrainian
+    - ukrainian_g
     - east_slavic
     - russian_student
     - russian_yavert
