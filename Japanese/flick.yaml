@@ -139,6 +139,9 @@ rows:
 subKeyboards:
   # ABC
   Alphabet1:
+    attributes:
+      labelFlags:
+        followKeyLabelRatio: true
     rows:
       - letters:
           - type: base
@@ -146,6 +149,7 @@ subKeyboards:
             attributes: *functional
 
           - type: flick
+            label: "@-_/"
             primary: "@|1"
             left: "-"
             up: "_"
@@ -153,12 +157,14 @@ subKeyboards:
             down: "1|@"
 
           - type: flick
+            label: "ABC"
             primary: "a|2"
             left: "b"
             up: "c"
             down: "2||"
 
           - type: flick
+            label: "DEF"
             primary: "d|3"
             left: "e"
             up: "f"
@@ -174,12 +180,14 @@ subKeyboards:
             attributes: *repeatable
 
           - type: flick
+            label: "GHI"
             primary: "g|4"
             left: "h"
             up: "i"
             down: "4|$"
 
           - type: flick
+            label: "JKL"
             primary: "j|5"
             left: "k"
             up: "l"
@@ -187,6 +195,7 @@ subKeyboards:
 
           - type: flick
             primary: "m|6"
+            label: "MNO"
             left: "n"
             up: "o"
             down: "6|&"
@@ -201,6 +210,7 @@ subKeyboards:
             attributes: *functional
 
           - type: flick
+            label: "PQRS"
             primary: "p|7"
             left: "q"
             up: "r"
@@ -208,12 +218,14 @@ subKeyboards:
             down: "7|<"
 
           - type: flick
+            label: "TUV"
             primary: "t|8"
             left: "u"
             up: "v"
             down: "8|^"
 
           - type: flick
+            label: "WXYZ"
             primary: "w|9"
             left: "x"
             up: "y"
@@ -232,8 +244,8 @@ subKeyboards:
 
           - "*"
 
-
           - type: flick
+            label: "'\":;"
             primary: "'|0"
             left: "\""
             up: ":"
@@ -241,6 +253,7 @@ subKeyboards:
             down: "0|#"
 
           - type: flick
+            label: ".,?!"
             primary: "."
             left: ","
             up: "?"
@@ -249,5 +262,13 @@ subKeyboards:
           - type: enter
             attributes:
               width: Grow
-        attributes: *globalAttrs
+        attributes:
+          width: Grow
+          showPopup: false
+          moreKeyMode: OnlyExplicit
+          useKeySpecShortcut: false
+          style: Normal
+          shiftable: false
+          labelFlags:
+            followKeyLabelRatio: true
         splittable: false
