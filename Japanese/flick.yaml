@@ -106,7 +106,8 @@ rows:
     splittable: false
   - bottom:
       - type: base
-        spec: "!text/keylabel_to_symbol|!code/key_switch_alpha_symbol" # TODO: Toggle between Kana, ABCD, 1234
+        spec: "ABC|_"
+        code: -20
         attributes: *functional
 
       - type: flick
@@ -135,3 +136,118 @@ rows:
           width: Grow
     attributes: *globalAttrs
     splittable: false
+subKeyboards:
+  # ABC
+  Alphabet1:
+    rows:
+      - letters:
+          - type: base
+            spec: "!icon/action_undo|!code/action_undo"
+            attributes: *functional
+
+          - type: flick
+            primary: "@|1"
+            left: "-"
+            up: "_"
+            right: "/"
+            down: "1|@"
+
+          - type: flick
+            primary: "a|2"
+            left: "b"
+            up: "c"
+            down: "2||"
+
+          - type: flick
+            primary: "d|3"
+            left: "e"
+            up: "f"
+            down: "3|~"
+
+          - type: base
+            spec: "!icon/delete_key|!code/key_delete"
+            attributes: *repeatable
+        splittable: false
+      - letters:
+          - type: base
+            spec: "!icon/action_left|!code/action_left"
+            attributes: *repeatable
+
+          - type: flick
+            primary: "g|4"
+            left: "h"
+            up: "i"
+            down: "4|$"
+
+          - type: flick
+            primary: "j|5"
+            left: "k"
+            up: "l"
+            down: "5|%"
+
+          - type: flick
+            primary: "m|6"
+            left: "n"
+            up: "o"
+            down: "6|&"
+
+          - type: base
+            spec: "!icon/action_right|!code/action_right"
+            attributes: *repeatable
+        splittable: false
+      - letters:
+          - type: base
+            spec: "!text/keylabel_to_symbol|!code/key_switch_alpha_symbol"
+            attributes: *functional
+
+          - type: flick
+            primary: "p|7"
+            left: "q"
+            up: "r"
+            right: "s"
+            down: "7|<"
+
+          - type: flick
+            primary: "t|8"
+            left: "u"
+            up: "v"
+            down: "8|^"
+
+          - type: flick
+            primary: "w|9"
+            left: "x"
+            up: "y"
+            right: "z"
+            down: "9|>"
+
+          - type: base
+            spec: "!icon/space_key_for_number_layout|!code/key_space"
+            attributes: { style: Functional, labelFlags: { }, longPressEnabled: true }
+        splittable: false
+      - bottom:
+          - type: base
+            spec: "あ|_"
+            code: -19
+            attributes: *functional
+
+          - "*"
+
+
+          - type: flick
+            primary: "'|0"
+            left: "\""
+            up: ":"
+            right: ";"
+            down: "0|#"
+
+          - type: flick
+            primary: "."
+            left: ","
+            up: "?"
+            right: "!"
+
+          - type: enter
+            attributes:
+              width: Grow
+        attributes: *globalAttrs
+        splittable: false
