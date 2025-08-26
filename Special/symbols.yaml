@@ -23,7 +23,7 @@ rows:
       - ["-", "_", "\u2013", "\u2014", "\u207B", "\u208B", "\u00B7"]
       # U+207A: "⁺" SUPERSCRIPT PLUS
       # U+208A: "⁺" SUBSCRIPT PLUS
-      - ["+", "\u207A", "/u208A"]
+      - ["+", "\u207A", "\u208A"]
       - "("
       - ")"
   - letters:
