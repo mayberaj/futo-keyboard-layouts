@@ -142,6 +142,7 @@ subKeyboards:
     attributes:
       labelFlags:
         followKeyLabelRatio: true
+        autoXScale: true
     rows:
       - letters:
           - type: base
@@ -149,7 +150,7 @@ subKeyboards:
             attributes: *functional
 
           - type: flick
-            label: "@-_/"
+            label: "@ - _ /"
             primary: "@|1"
             left: "-"
             up: "_"
@@ -158,16 +159,16 @@ subKeyboards:
 
           - type: flick
             label: "ABC"
-            primary: "a|2"
-            left: "b"
-            up: "c"
+            primary: "A|2"
+            left: "B|b"
+            up: "C|c"
             down: "2||"
 
           - type: flick
             label: "DEF"
-            primary: "d|3"
-            left: "e"
-            up: "f"
+            primary: "D|3"
+            left: "E|e"
+            up: "F|f"
             down: "3|~"
 
           - type: base
@@ -181,23 +182,23 @@ subKeyboards:
 
           - type: flick
             label: "GHI"
-            primary: "g|4"
-            left: "h"
-            up: "i"
+            primary: "G|4"
+            left: "H|h"
+            up: "I|i"
             down: "4|$"
 
           - type: flick
             label: "JKL"
-            primary: "j|5"
-            left: "k"
-            up: "l"
+            primary: "J|5"
+            left: "K|k"
+            up: "L|l"
             down: "5|%"
 
           - type: flick
-            primary: "m|6"
             label: "MNO"
-            left: "n"
-            up: "o"
+            primary: "M|6"
+            left: "N|n"
+            up: "O|o"
             down: "6|&"
 
           - type: base
@@ -211,25 +212,25 @@ subKeyboards:
 
           - type: flick
             label: "PQRS"
-            primary: "p|7"
-            left: "q"
-            up: "r"
-            right: "s"
+            primary: "P|7"
+            left: "Q|q"
+            up: "R|r"
+            right: "S|s"
             down: "7|<"
 
           - type: flick
             label: "TUV"
-            primary: "t|8"
-            left: "u"
-            up: "v"
+            primary: "T|8"
+            left: "U|u"
+            up: "V|v"
             down: "8|^"
 
           - type: flick
             label: "WXYZ"
-            primary: "w|9"
-            left: "x"
-            up: "y"
-            right: "z"
+            primary: "W|9"
+            left: "X|x"
+            up: "Y|y"
+            right: "Z|z"
             down: "9|>"
 
           - type: base
@@ -242,22 +243,22 @@ subKeyboards:
             code: -19
             attributes: *functional
 
-          - "*"
+          - "a ⇔ A|*"
 
           - type: flick
-            label: "'\":;"
-            primary: "'|0"
-            left: "\""
-            up: ":"
-            right: ";"
+            label: "＇＂：；"
+            primary: "＇|0"
+            left: "＂|\""
+            up: "：|:"
+            right: "；|;"
             down: "0|#"
 
           - type: flick
-            label: ".,?!"
-            primary: "."
-            left: ","
-            up: "?"
-            right: "!"
+            label: "．，？！"
+            primary: "．|."
+            left: "，|,"
+            up: "？|?"
+            right: "！|!"
 
           - type: enter
             attributes:
