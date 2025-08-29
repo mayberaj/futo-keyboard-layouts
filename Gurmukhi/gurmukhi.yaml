@@ -1,6 +1,7 @@
 name: ਪੰਜਾਬੀ (ਗੁਰਮੁਖੀ)
 description: Punjabi language layout using Gurmukhi script by Sanmay Joshi
 languages: pa-IN
+attributes: {moreKeyMode: OnlyExplicit}
 rows:
   - numbers:
       - ੧
@@ -47,9 +48,8 @@ rows:
         normal: ੌ
         shifted: ਔ
   - letters:
-      - type: case
-        normal: ੳ
-        shifted: ੴ
+      - - ੳ
+        - ੴ
       - ੲ
       - ਸ
       - ਹ
