@@ -589,6 +589,8 @@ languages:
     - nordic
   nio:
     - nganasan
+  pa_IN:
+    - gurmukhi
   pl:
     - qwerty
     - qwertz
