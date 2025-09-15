@@ -831,6 +831,7 @@ languages:
     - nordic
   ja:
     - flick
+    - japanese_qwerty
     - flick_latin
   ipa:
     - ipa
