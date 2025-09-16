@@ -2,7 +2,7 @@ name: 포네틱 (Phonetic)
 languages: ko
 combiners:
   - Korean
-attributes: {shiftable: true}
+attributes: {shiftable: false}
 autoShift: false
 rows:
   - letters:
@@ -16,7 +16,6 @@ rows:
     - ㅣ
     - ㅗ
     - ㅍ
-
   - letters:
     - ㅏ
     - {type: case, normal: ["ㅅ", "ㅆ"], shiftedManually: ["ㅆ"]}
@@ -27,7 +26,6 @@ rows:
     - {type: case, normal: ["ㅈ", "ㅉ"], shiftedManually: ["ㅉ"]}
     - ㅋ
     - ㅛ
-
   - letters:
     - ㅕ
     - ㅠ
