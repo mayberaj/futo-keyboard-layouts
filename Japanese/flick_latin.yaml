@@ -2,6 +2,7 @@ name: Japanese 12-Key Flick Layout (Latin)
 languages: ja
 numberRowMode: AlwaysDisabled
 bottomRowHeightMode: Flexible
+imeHint: 12key
 attributes: &globalAttrs
   width: Grow
   showPopup: false
@@ -35,7 +36,7 @@ rows:
 
       - type: flick
         primary: "sa|3"
-        left: "si|d"
+        left: "shi|d"
         up: "su|e"
         right: "se|f"
         down: "so|~"
@@ -51,8 +52,8 @@ rows:
 
       - type: flick
         primary: "ta|4"
-        left: "ti|g"
-        up: "tu|h"
+        left: "chi|g"
+        up: "tsu|h"
         right: "te|i"
         down: "to|$"
 
@@ -110,23 +111,29 @@ rows:
         code: -20
         attributes: *functional
 
-      - type: flick
-        primary: "*" # TODO: this should actually change contextually
-        left: "voicedMark|["
-        up: "small|`"
-        right: "semivoiced|]"
-
+      - type: case
+        normal:
+          type: flick
+          # TODO: Icon
+          primary: " |*"
+          left: "voicedMark|["
+          up: "small|`"
+          right: "semivoiced|]"
+        shifted:
+          type: base
+          spec: "!icon/action_switch_language|!code/action_switch_language"
+          attributes: { longPressEnabled: true }
 
       - type: flick
         primary: "wa|0"
         left: "wo|+"
-        up: "N|/"
+        up: "n|/"
         right: "-|-"
-        down: "~|<"
+        down: "~ |<"
 
       - type: flick
-        primary: ",|#"
-        left: ".|,"
+        primary: ", |#"
+        left: ". |,"
         up: "?|?"
         right: "!|!"
         down: "...|>"
@@ -139,6 +146,10 @@ rows:
 subKeyboards:
   # ABC
   Alphabet1:
+    attributes:
+      labelFlags:
+        followKeyLabelRatio: true
+        autoXScale: true
     rows:
       - letters:
           - type: base
@@ -146,6 +157,7 @@ subKeyboards:
             attributes: *functional
 
           - type: flick
+            label: "@ - _ /"
             primary: "@|1"
             left: "-"
             up: "_"
@@ -153,15 +165,17 @@ subKeyboards:
             down: "1|@"
 
           - type: flick
-            primary: "a|2"
-            left: "b"
-            up: "c"
+            label: "ABC"
+            primary: "A|2"
+            left: "B|b"
+            up: "C|c"
             down: "2||"
 
           - type: flick
-            primary: "d|3"
-            left: "e"
-            up: "f"
+            label: "DEF"
+            primary: "D|3"
+            left: "E|e"
+            up: "F|f"
             down: "3|~"
 
           - type: base
@@ -174,21 +188,24 @@ subKeyboards:
             attributes: *repeatable
 
           - type: flick
-            primary: "g|4"
-            left: "h"
-            up: "i"
+            label: "GHI"
+            primary: "G|4"
+            left: "H|h"
+            up: "I|i"
             down: "4|$"
 
           - type: flick
-            primary: "j|5"
-            left: "k"
-            up: "l"
+            label: "JKL"
+            primary: "J|5"
+            left: "K|k"
+            up: "L|l"
             down: "5|%"
 
           - type: flick
-            primary: "m|6"
-            left: "n"
-            up: "o"
+            label: "MNO"
+            primary: "M|6"
+            left: "N|n"
+            up: "O|o"
             down: "6|&"
 
           - type: base
@@ -201,23 +218,26 @@ subKeyboards:
             attributes: *functional
 
           - type: flick
-            primary: "p|7"
-            left: "q"
-            up: "r"
-            right: "s"
+            label: "PQRS"
+            primary: "P|7"
+            left: "Q|q"
+            up: "R|r"
+            right: "S|s"
             down: "7|<"
 
           - type: flick
-            primary: "t|8"
-            left: "u"
-            up: "v"
+            label: "TUV"
+            primary: "T|8"
+            left: "U|u"
+            up: "V|v"
             down: "8|^"
 
           - type: flick
-            primary: "w|9"
-            left: "x"
-            up: "y"
-            right: "z"
+            label: "WXYZ"
+            primary: "W|9"
+            left: "X|x"
+            up: "Y|y"
+            right: "Z|z"
             down: "9|>"
 
           - type: base
@@ -226,28 +246,37 @@ subKeyboards:
         splittable: false
       - bottom:
           - type: base
-            spec: "あ|_"
+            spec: "a|_"
             code: -19
             attributes: *functional
 
-          - "*"
-
+          - "a = A|*"
 
           - type: flick
+            label: "'\":;"
             primary: "'|0"
-            left: "\""
-            up: ":"
-            right: ";"
+            left: "\"|\""
+            up: ":|:"
+            right: ";|;"
             down: "0|#"
 
           - type: flick
-            primary: "."
-            left: ","
-            up: "?"
-            right: "!"
+            label: ".,?!"
+            primary: ".|."
+            left: ",|,"
+            up: "?|?"
+            right: "!|!"
 
           - type: enter
             attributes:
               width: Grow
-        attributes: *globalAttrs
+        attributes:
+          width: Grow
+          showPopup: false
+          moreKeyMode: OnlyExplicit
+          useKeySpecShortcut: false
+          style: Normal
+          shiftable: false
+          labelFlags:
+            followKeyLabelRatio: true
         splittable: false

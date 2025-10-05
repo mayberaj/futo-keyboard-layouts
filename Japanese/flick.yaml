@@ -2,6 +2,7 @@ name: Japanese 12-Key Flick Layout
 languages: ja
 numberRowMode: AlwaysDisabled
 bottomRowHeightMode: Flexible
+imeHint: 12key
 attributes: &globalAttrs
   width: Grow
   showPopup: false
@@ -110,12 +111,18 @@ rows:
         code: -20
         attributes: *functional
 
-      - type: flick
-        primary: " |*" # TODO: this should actually change contextually. TODO: icon
-        left: "゛|["
-        up: "あぁ|`"
-        right: "゜|]"
-
+      - type: case
+        normal:
+          type: flick
+          # TODO: Icon
+          primary: " |*"
+          left: "゛|["
+          up: "あぁ|`"
+          right: "゜|]"
+        shifted:
+          type: base
+          spec: "!icon/action_switch_language|!code/action_switch_language"
+          attributes: { longPressEnabled: true }
 
       - type: flick
         primary: "わ|0"
