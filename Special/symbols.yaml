@@ -10,7 +10,7 @@ rows:
     numRowMode: Filler
   - letters:
       - "@"
-      - "#"
+      - ["#", "№"]
       - "$"
       - "_"
       - "%"
