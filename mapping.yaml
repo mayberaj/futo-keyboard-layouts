@@ -70,6 +70,8 @@ languages:
     - bengali_jatiyo
     - bengali
     - bengali_unijoy
+  bod:
+    - tibetan_wylie
   ca:
     - spanish
     - qwerty
@@ -140,6 +142,8 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+  dz:
+    - tibetan_wylie
   el:
     - greek
     - qwerty
@@ -163,6 +167,7 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+    - workman
   en_IN:
     - qwerty
     - qwertz
@@ -174,6 +179,7 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+    - workman
   en_Shaw:
     - shavian
     - shavian_two_layer
@@ -188,6 +194,7 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+    - workman
   enf:
     - enets
   enh:
@@ -489,6 +496,8 @@ languages:
     - russian_yazhert
   lbe:
     - north_caucasian
+  lbj:
+    - tibetan_wylie
   lez:
     - north_caucasian
   lo_LA:
@@ -561,6 +570,7 @@ languages:
     - nordic
   ne_NP:
     - nepali_romanized
+    - nepali_traditional_simplified
     - nepali_traditional
   new_NP:
     - newa_romanized
@@ -661,6 +671,8 @@ languages:
     - sami_inari
   si_LK:
     - sinhala
+  sip:
+    - tibetan_wylie
   sk:
     - qwerty
     - qwertz
@@ -801,6 +813,8 @@ languages:
   vot:
     - votic
     - qwerty
+  xsr:
+    - tibetan_wylie
   yrk:
     - nenets
   zgh:
@@ -832,5 +846,9 @@ languages:
     - bepo
     - pcqwerty
     - nordic
+  ja:
+    - flick
+    - japanese_qwerty
+    - flick_latin
   ipa:
     - ipa
