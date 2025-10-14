@@ -501,6 +501,8 @@ languages:
     - tibetan_wylie
   lez:
     - north_caucasian
+  lkt:
+    - lakota
   lo_LA:
     - lao
   lt:
