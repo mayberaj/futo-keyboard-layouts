@@ -18,7 +18,7 @@ rows:
     - { type: case, normal: [૯] }
     - { type: case, normal: [૦] }
     - { type: case, normal: [ઃ] }
-    - { type: case, normal: [ૃ, ઋ, ૄ , ૠ], shifted: [ઋ , ૄ , ૠ]}
+    - { type: case, normal: [ૃ, ઋ, ૄ , ૠ], shifted: [ઋ , ૄ , ૠ] }
 
   - letters:
     - { type: case, normal: [ૌ, ઔ], shifted: [ઔ] }
@@ -29,7 +29,7 @@ rows:
     - { type: case, normal: [બ, ભ], shifted: [ભ] }
     - { type: case, normal: [હ, ઙ], shifted: [ઙ] }
     - { type: case, normal: [ગ, ઘ], shifted: [ઘ] }
-    - { type: case, normal: [દ, ધ], shifted: [ધ]}
+    - { type: case, normal: [દ, ધ], shifted: [ધ] }
     - { type: case, normal: [જ, ઝ], shifted: [ઝ] }
     - { type: case, normal: [ડ, ઢ], shifted: [ઢ] }
     - { type: case, normal: [઼, ઞ], shifted: [ઞ] }
@@ -54,5 +54,5 @@ rows:
     - { type: case, normal: [વ] }
     - { type: case, normal: [લ, ળ], shifted: [ળ] }
     - { type: case, normal: [સ, શ], shifted: [શ] }
-    - { type: case, normal: [ષ, ૱, ૰]}
-    - { type: case, normal: [ય, ।, ॥, ઽ]}
+    - { type: case, normal: [ષ, ૱, ૰] }
+    - { type: case, normal: [ય, ।, ॥, ઽ] }
