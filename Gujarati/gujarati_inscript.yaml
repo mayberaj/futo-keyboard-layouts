@@ -55,5 +55,4 @@ rows:
     - { type: case, normal: [લ, ળ], shifted: [ળ] }
     - { type: case, normal: [સ, શ], shifted: [શ] }
     - { type: case, normal: [ષ, ૱, ૰]}
-    #- { type: case, normal: [।, ॥, ઽ]}
-    - { type: case, normal: [ય]}
+    - { type: case, normal: [ય, ।, ॥, ઽ]}
